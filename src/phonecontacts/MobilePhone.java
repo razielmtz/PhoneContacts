@@ -82,14 +82,13 @@ public class MobilePhone {
             return contacts.get(pos).toString();
         }
     }
-     @Override
-    public String toString(){
-        String string="List of Contacts: "+this.sportName+"{\n";
+    public void getContactsList(){
+        String contactslist ="List of contacts:={\n";
         for (Contact contact : contacts) {
-            string+= "\t" + contact.toString() + "\n";
+            contactslist= "\t" + contact + "\n";
         }
-        string += "}";
-        return string;
+        contactslist += "}";
+        System.out.print(contactslist);
     }
 }
 

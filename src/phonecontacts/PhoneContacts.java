@@ -38,10 +38,13 @@ public class PhoneContacts {
                     queryContact();
                     break;
                 case 5:
+                    myPhone.getContactsList();
                     break;
                 case 6:
+                    printMenu();
                     break;
                 default:
+                    System.exit(0);
                     break;
             }
             System.out.println("Option");
@@ -107,10 +110,9 @@ public class PhoneContacts {
     }
     public static void queryContact(){
         String name;
-        int number;
         System.out.println("Contact name: ");
         name = teclado.nextLine();       
         myPhone.queryContact(name);       
-    }  
+    }     
     
 }
